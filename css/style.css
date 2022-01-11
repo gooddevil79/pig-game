@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+main {
+  display: flex;
+  position: relative;
+  width: 90rem;
+  height: 50rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  overflow: hidden;
+}
+.player-section {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+  padding: 10px;
+}
+.player-title {
+  font-size: 35px;
+  color: #333;
+  padding-top: 30px;
+  font-weight: lighter;
+}
+.player-score {
+  color: #c7365f;
+  font-size: 80px;
+  font-weight: lighter;
+  padding-top: 60px;
+}
+.current-container {
+  background-color: #c7365f;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: auto;
+  width: 20rem;
+  height: 10rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.current-title {
+  color: #fff;
+  font-size: 25px;
+  font-weight: lighter;
+}
+.current-point {
+  color: #fff;
+  font-size: 30px;
+  font-weight: lighter;
+  padding-top: 10px;
+}
+.player-turn-active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.89);
+  box-shadow: 0px 0px 5px #757575;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.reset {
+  margin-top: 40px;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+.roll {
+  top: 70%;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+.hold {
+  top: 80%;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+.dice-image {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  margin-top: 120px;
+  transform: translateX(-50%) rotate(0);
+}
+.hidden {
+  visibility: hidden;
+}
+.rolling-dice-animation {
+  transform-origin: center;
+  transform: translateX(-50%) rotate(360deg);
+  transition: all 1s;
+}
+.player-win {
+  background-color: #333;
+  color: #c7365f;
+}
+
+.player-win .player-title {
+  color: #c7365f;
+}
+/* @keyframes rollingDice {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+} */
