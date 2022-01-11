@@ -53,7 +53,7 @@ rollBtn.addEventListener('click', function () {
 
     diceImage.classList.toggle('rolling-dice-animation');
     diceImage.classList.remove('hidden');
-    diceImage.src = `/img/dice-${diceNumber}.png`;
+    diceImage.src = `img/dice-${diceNumber}.png`;
     // check for 1 in each dice roll :
     if (diceNumber !== 1) {
       // add to scores
